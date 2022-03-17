@@ -1,26 +1,24 @@
 #include "main.h"
 
 /**
- *
- *
- *
- *
+ * more_numbers - prints 10x the numbers,
+ * from 0 to 14,
+ * followed by a new line
  */
 
 void more_numbers(void)
 {
-	char counter;
-	char number;
+	int i, j;
 
-	for (counter = '0' ; counter <= '9' ; counter++)
+	for (i = 0; i < 10; i++)
 	{
-		for (number = 0 ; number < 15 ; number++)
+		for (j = 0; j < 15; j++)
 		{
-			if (number > 9)
+			if (j > 9)
 			{
-				_putchar((number / 10) + '0');
+			_putchar((j / 10) + '0');
+			_putchar((j % 10) + '0');
 			}
-			_putchar((number % 10) + '0');
 		}
 		_putchar('\n');
 	}
