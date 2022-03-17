@@ -1,29 +1,28 @@
 #include "main.h"
+
 /**
- * print_diagonal - entry with int n
- * spaces: decide how many spaces by targeting m
- * m: printing the space to allow spaces to print \ and \n
- * @n: number dictacted
+ * print_diagonal -  a function that draws a diagonal line on the terminal
+ * @n: input number of times '\' should be printed
+ * Return: a diagonal
  */
 void print_diagonal(int n)
 {
-	int spaces = 1;
+	int co, sp;
 
-	while (spaces > 0 && spaces <= n)
+	if (n <= 0)
 	{
-		int m = 1;
-
-		while (m < spaces)
-		{
-			_putchar(' ');
-			m++;
-		}
-		_putchar('\\');
 		_putchar('\n');
-		spaces++;
 	}
-	if (n < 0)
+	else
 	{
-		_putchar('\n');
+		for (co = 1; co <= n; co++)
+		{
+			for (sp = 1; sp < co; sp++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\\');
+			_putchar('\n');
+		}
 	}
 }
