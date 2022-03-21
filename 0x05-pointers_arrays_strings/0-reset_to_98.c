@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 /**
- *function to take pointer as arguement
- *and changes value it points
- *to
+ * reset_to_98 - updates the value of the variable
+ * the pointer points to to 98
  */
 void reset_to_98(int *n)
 {
