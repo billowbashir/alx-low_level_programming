@@ -7,7 +7,6 @@
  * Return: pointer
  */
 
-
 	char *_strstr(char *haystack, char *needle)
 	{
 		int i, j;
@@ -28,4 +27,5 @@
 		}
 	return (0);
 	}
-   
+
+	
