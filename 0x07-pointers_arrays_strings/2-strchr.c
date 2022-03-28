@@ -4,10 +4,7 @@
  * _strchr - char s char c
  * @s: string
  * @c: char
- *
- *
- *
- *
+ * Return: s or null if not found
  */
 char *_strchr(char *s, char c)
 {
